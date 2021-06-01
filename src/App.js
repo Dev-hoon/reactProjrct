@@ -29,8 +29,8 @@ function App() {
     //   <Hello />
     // </div>
     <Wrapper>
-      <Hello name = '일번이' color = 'red'/>
-      <Hello  color = 'blue'/>
+      <Hello name = '일번이' color = 'red' isSpecial = {true}/>
+      <Hello  color = 'blue' isSpecial/>
 
     </Wrapper>
   );

@@ -4,6 +4,7 @@ import Hello from './Hello';
 import react from 'react';
 import Wrapper from './Wrapper';
 import Counter from './Counter';
+import InputSample from './InputSample';
 function App() {
   const name = 'react';
   const style = {
@@ -33,12 +34,13 @@ function App() {
     //   <Hello  color = 'blue' isSpecial/>
 
     // </Wrapper>
-    <div>
-    <Counter />
-    <Counter />
-    <Counter />
-    <Counter />
-    </div>
+    // <div>
+    // <Counter />
+    // <Counter />
+    // <Counter />
+    // <Counter />
+    // </div>
+    <InputSample />
   );
 }
 

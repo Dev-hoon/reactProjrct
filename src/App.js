@@ -40,7 +40,13 @@ function App() {
     // <Counter />
     // <Counter />
     // </div>
-    <InputSample />
+    <div>
+     <InputSample />
+     <InputSample />
+     <InputSample />
+     <InputSample />
+     <Counter />
+    </div>
   );
 }
 

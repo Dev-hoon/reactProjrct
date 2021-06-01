@@ -3,7 +3,7 @@ import './App.css';
 import Hello from './Hello';
 import react from 'react';
 import Wrapper from './Wrapper';
-
+import Counter from './Counter';
 function App() {
   const name = 'react';
   const style = {
@@ -28,11 +28,17 @@ function App() {
     //   <Hello />
     //   <Hello />
     // </div>
-    <Wrapper>
-      <Hello name = '일번이' color = 'red' isSpecial = {true}/>
-      <Hello  color = 'blue' isSpecial/>
+    // <Wrapper>
+    //   <Hello name = '일번이' color = 'red' isSpecial = {true}/>
+    //   <Hello  color = 'blue' isSpecial/>
 
-    </Wrapper>
+    // </Wrapper>
+    <div>
+    <Counter />
+    <Counter />
+    <Counter />
+    <Counter />
+    </div>
   );
 }
 

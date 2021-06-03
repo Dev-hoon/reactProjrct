@@ -5,6 +5,7 @@ import react from 'react';
 import Wrapper from './Wrapper';
 import Counter from './Counter';
 import InputSample from './InputSample';
+import UserList from './UserList';
 function App() {
   const name = 'react';
   const style = {
@@ -40,12 +41,15 @@ function App() {
     // <Counter />
     // <Counter />
     // </div>
+    // <div>
+    //  <InputSample />
+    //  <InputSample />
+    //  <InputSample />
+    //  <InputSample />
+    //  <Counter />
+    // </div>
     <div>
-     <InputSample />
-     <InputSample />
-     <InputSample />
-     <InputSample />
-     <Counter />
+      <UserList />
     </div>
   );
 }

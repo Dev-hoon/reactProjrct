@@ -1,11 +1,13 @@
-import React,{useState} from 'react';
+import React,{useReducer, useRef, useState} from 'react';
 
 function InputSample() {
     const [input,setInput] = useState({
         name : '',
         nickname :''
     });
+    const nameInput = useRef();
     const {name, nickname} = input;
+
     const onChange = (e) =>{
         const {value, name} = e.target;
         setInput({
@@ -20,6 +22,7 @@ function InputSample() {
             nickname:'',
         })
         //setText('');  
+        nameInput.current.focus();
       };
   return (
     <div>
@@ -28,7 +31,7 @@ function InputSample() {
       <div>
         <b>값: {text}</b>
       </div> */}
-      <input name = 'name' placeholder = '이름' onChange={onChange} value={name}/>
+      <input name = 'name' placeholder = '이름' onChange={onChange} value={name} ref ={nameInput}/>
       <input name = 'nickname'placeholder = '닉네임' onChange={onChange} value={nickname}/>
       <button onClick = {onReset}>초기화</button>
       <div>
